@@ -16,7 +16,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input('введите число: '))
+count = 2
+dividers_c = 0
+while count < abs(number):
+    if number % count == 0:
+        dividers_c += 1
+        print(count)
+    count += 1
+if dividers_c == 0:
+    print('число простое')
 ```
 
 ---
