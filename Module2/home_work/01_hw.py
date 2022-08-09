@@ -5,4 +5,10 @@
 # Формат выходных данных
 # Выведите «YES», если можно отломить от шоколадки ровно k долек, и «NO» иначе.
 
-# TODO: your code here
+num_vertical = int(input('число долек шоколадки по вертикали '))
+num_horiz = int(input('число долек шоколадки по горизонтали '))
+num_shares = int(input('сколько долек отломить '))
+if (num_shares < num_vertical * num_horiz) and (num_shares <= num_vertical * (num_horiz - 1) or num_shares <= num_horiz * (num_vertical - 1)):
+    print(num_shares, ' можно отломить за раз')
+else:
+    print(num_shares, ' нельзя отломить за раз')
