@@ -7,4 +7,11 @@
 # коров, корова или коровы
 # Например, 1 корова, 2 коровы, 5 коров, 125 коров.
 
-# TODO: your code here
+cow_num = int(input('число коров: '))
+if cow_num == 1:
+    text = 'корова'
+elif 2 <= cow_num <= 4:
+    text = 'коровы'
+else:
+    text = 'коров'
+print('На лугу пасется', cow_num, text)
