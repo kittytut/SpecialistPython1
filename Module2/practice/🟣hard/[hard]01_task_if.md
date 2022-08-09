@@ -18,7 +18,15 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input('Введите четырехзначное число: '))
+number1 = number // 1000
+number2 = number // 100 % 10
+number3 = number // 10 % 10
+number4 = number % 10
+if number1 == number4 and number2 == number3:
+    print('число симметричное')
+else:
+    print('число несимметричное')
 ```
 
 ---
