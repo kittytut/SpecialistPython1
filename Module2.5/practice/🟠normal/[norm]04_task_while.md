@@ -22,7 +22,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input('введите число: '))
+count = int(1)
+cur_str = ''
+if 1 <= int(number) <= 9:
+    while count <= number:
+        cur_str += str(count)
+        print(cur_str)
+        count += 1
+else:
+    print('введено некорректное число')
 ```
 
 ---
