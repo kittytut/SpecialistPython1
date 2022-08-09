@@ -15,7 +15,11 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input('Введите целое число: '))
+if number >= 100 and number < 1000:
+    print('Число трехзначное')
+else:
+    print('Число не является трехзначным')
 ```
 
 ---
