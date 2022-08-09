@@ -18,7 +18,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+cash = int(input('денег у покупателя: '))
+product_cost = int(input('цена товара: '))
+change = cash - product_cost
+if change >= 0:
+    print('ваша сдача: ', change)
+else:
+    print('денег на покупку недостаточно!')
 ```
 
 ---
