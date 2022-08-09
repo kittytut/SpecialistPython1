@@ -18,8 +18,12 @@
 ### Решение задачи
 
 ```python
-a = int(input("a: "))
-b = int(input("b: "))
-
-# TODO: you code here...
+arr_start = int(input('начало диапазона: '))
+arr_end = int(input('конец диапазона: '))
+if arr_start > arr_end:
+    arr_start, arr_end = arr_end, arr_start
+while arr_start <= arr_end:
+    if arr_start % 5 == 0:
+        print(arr_start)
+    arr_start += 1
 ```
