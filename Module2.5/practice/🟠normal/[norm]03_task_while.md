@@ -20,7 +20,13 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+level_count = int(input('число уровней: '))
+summary = int(0)
+level = int(1)
+while level <= level_count:
+    summary = summary + (level ** 2)
+    level += 1
+print('сумма чисел:', summary)
 ```
 
 ---
