@@ -16,7 +16,12 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input('введите число: '))
+count = 2
+while count < abs(number):
+    if number % count == 0:
+        print(count)
+    count += 1
 ```
 
 ---
