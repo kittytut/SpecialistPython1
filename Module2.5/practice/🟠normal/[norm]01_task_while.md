@@ -33,7 +33,16 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input('Введите число ступенек :'))
+line = ''
+count = int(0)
+if 1 < number < 20:
+    while count < number:
+        line = line + '*'
+        print(line)
+        count += 1
+else:
+    print('введено некорректное число')
 ```
 
 ---
