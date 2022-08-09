@@ -16,7 +16,14 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+stop_input = 'стоп'
+cur_input = ''
+positive_c = int(0)
+while stop_input != cur_input:
+    cur_input = input('введите число или "стоп": ')
+    if stop_input != cur_input and int(cur_input) > 0:
+        positive_c += 1
+print('число положительных: ', positive_c)
 ```
 
 ---
