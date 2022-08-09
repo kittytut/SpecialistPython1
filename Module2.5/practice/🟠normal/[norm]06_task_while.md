@@ -16,7 +16,17 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input('введите число: '))
+divider = 1
+dividers_sum = 0
+while divider < number:
+    if number % divider == 0:
+        dividers_sum += divider
+    divider += 1
+if dividers_sum == number:
+    print('число совершенное')
+else:
+    print('число несовершенное')
 ```
 
 ---
