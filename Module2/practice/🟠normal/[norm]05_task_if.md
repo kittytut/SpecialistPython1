@@ -15,7 +15,22 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+month_num = int(input('Введите номер месяца: '))
+winter = [12,1,2]
+spring = [3,4,5]
+summer = [6,7,8]
+autumn = [9,10,11]
+
+if month_num in winter:
+    print('зима')
+elif month_num in spring:
+    print('весна')
+elif month_num in summer:
+    print('лето')
+elif month_num in autumn:
+    print('осень')
+else:
+    print('Введено некорректное значение')
 ```
 
 ---
