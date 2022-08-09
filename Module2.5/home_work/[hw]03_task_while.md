@@ -28,7 +28,15 @@ n = 5
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+number = int(input('введите целое число: '))
+counter1 = 1
+while counter1 <= number:
+    counter2 = 1
+    while counter2 <= number:
+        print('%-3d' % (counter2 * counter1), end='  ')
+        counter2 += 1
+    print('\n')
+    counter1 += 1
 ```
 
 ---
